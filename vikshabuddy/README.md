@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### project architecture
+src/
+├── api/                  # API service layer
+│   ├── endpoints/        # Endpoint-specific API calls
+│   └── apiClient.js      # Base API configuration
+├── assets/               # Static assets (images, fonts, etc.)
+├── components/           # Reusable UI components
+│   ├── common/           # Shared components (Button, Input, Modal, etc.)
+│   └── feature-specific/ # Components tied to specific features
+├── features/             # Feature-based modules
+│   ├── feature1/
+│   │   ├── components/   # Feature-specific components
+│   │   ├── slice.js      # Redux Toolkit slice
+│   │   └── thunks.js     # Async actions
+│   └── feature2/
+│       └── ...
+├── hooks/                # Custom React hooks
+├── layouts/              # Layout components (Header, Sidebar, etc.)
+├── pages/                # Route components
+├── store/                # Redux store configuration
+│   ├── index.js          # Store setup
+│   └── rootReducer.js    # Root reducer
+├── styles/               # Global styles
+├── utils/                # Utility functions
+├── App.jsx               # Main App component
+└── index.jsx             # Application entry point
