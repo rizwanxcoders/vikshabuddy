@@ -71,7 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### project architecture
-src/
+`src/
 ├── api/                  # API service layer
 │   ├── endpoints/        # Endpoint-specific API calls
 │   └── apiClient.js      # Base API configuration
@@ -95,4 +95,4 @@ src/
 ├── styles/               # Global styles
 ├── utils/                # Utility functions
 ├── App.jsx               # Main App component
-└── index.jsx             # Application entry point
+└── index.jsx             # Application entry point`
