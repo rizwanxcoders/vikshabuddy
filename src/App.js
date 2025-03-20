@@ -2,7 +2,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navigation from './components/common/Navigations';
-import Home from './pages/Home';
+import Home from './pages/Home/Home'
+// import Home from './pages/Home';
 
 function App() {
   return (
