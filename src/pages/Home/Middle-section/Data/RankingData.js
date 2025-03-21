@@ -9,7 +9,7 @@ const rankingData = [
     logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
     college: "Symbiosis International University - [SIU], Pune",
     ranking: "1 out of 73",
-    streams: "Overall",
+    streams: "Overall", 
   },
   {
     logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",

@@ -7,36 +7,6 @@ import {
 } from "react-icons/fa6";
 import Slider from "react-slick";
 
-// const PrevArrow = ({ onClick }) => (
-//   !isStart && (
-//   <button
-//     // className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-gray-700 p-6 rounded-full drop-shadow-2xl shadow-gray-600 hover:bg-gray-50 transition"
-//     className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-gray-700 p-6 rounded-full shadow-lg hover:bg-gray-50 transition"
-//     onClick={() => {
-//       onClick();
-//       setTimeout(checkPosition, 200); // Delay check for smooth transition
-//     }}
-//   >
-//     <FaArrowLeftLong size={24} />
-//   </button>
-//   )
-// );
-
-// // Custom Next Button
-// const NextArrow = ({ onClick }) => (
-//   !isEnd && (
-//   <button
-//     className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-gray-700 p-6 rounded-full shadow-lg hover:bg-gray-50 transition"
-//     onClick={() => {
-//       onClick();
-//       setTimeout(checkPosition, 200); // Delay check for smooth transition
-//     }}
-//   >
-//     <FaArrowRightLong size={24} />
-//   </button>
-//   )
-// );
-
 const TopUniversities = () => {
   const sliderRef = useRef(null); // Reference to Slider
   const [isStart, setIsStart] = useState(true); // Tracks if slider is at start

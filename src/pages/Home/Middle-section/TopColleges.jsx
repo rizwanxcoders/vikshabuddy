@@ -93,7 +93,7 @@ const TopColleges = () => {
     <div className=" flex items-center justify-center flex-col">
       <div className="w-5/6 mt-14 relative">
         <h1 className="text-4xl font-bold mb-10">Top 10 Colleges</h1>
-
+ 
         {
           clickedButton ??
           <p>Yaha par tumhara code ayega</p> 

@@ -13,7 +13,7 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 //     <FaArrowLeftLong size={24} />
 //   </button>
 // );
-
+ 
 // // Custom Next Button
 // const NextArrow = ({ onClick }) => (
 //   <button

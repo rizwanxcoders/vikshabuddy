@@ -16,7 +16,7 @@ const Home = () => {
       <TopColleges/>
       <hr className=" border-gray-300 mt-10" />
       <TopUniversities/>
-      <TopUniversities02/>
+      <TopUniversities02/> 
       <hr className=" border-gray-300 mt-10" />
       <StartNowAdd/>
       <hr className=" border-gray-300 mt-10" />

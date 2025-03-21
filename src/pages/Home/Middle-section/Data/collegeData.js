@@ -6,7 +6,7 @@ const colleges = [
     rating: 5,
     ranking: "#1 out of 50 in India 2024",
     cutoff: { exam: "JEE-Advanced 2024", score: 68 },
-    applicationDeadline: "14 Mar - 31 Mar 2024",
+    applicationDeadline: "14 Mar - 31 Mar 2024", 
     fees: "₹2,30,700",
     feeType: "1st Year Fees",
     clg_img: "https://www.cse.iitb.ac.in/gramdrishti/static/images/iitb.png",

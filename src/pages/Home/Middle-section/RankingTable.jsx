@@ -3,7 +3,7 @@ import rankingData from './Data/RankingData'
 
 const RankingTable = () => {
   return (
-    <div className=" flex items-center justify-center flex-col mb-10">
+    <div className=" flex items-center justify-center flex-col mb-10"> 
       <div className=' w-5/6'>
       <div className=" mx-auto my-5 ">
       <div className="overflow-x-auto border-2 border-gray-200">

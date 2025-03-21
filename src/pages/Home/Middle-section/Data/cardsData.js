@@ -6,7 +6,7 @@ const cardsData = [
       "program": "BE/B.Tech",
       "rating": 4.4,
       "reviews": 374,
-      "first_year_fees": "2.31 Lacs",
+      "first_year_fees": "2.31 Lacs", 
       "qs_ranking": 118,
       "score": "10/10",
       "clg_icon": "https://www.cse.iitb.ac.in/gramdrishti/static/images/iitb.png",
