@@ -5,43 +5,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { RxCross2 } from "react-icons/rx";
 
-
-// const [startIndex, setStartIndex] = useState(0);
-// const visibleCategories = 5;
-// const totalCategories = courses.length;
-
-// const PrevArrow = ({ onClick }) => (
-//   // if(startIndex + visibleCategories < totalCategories){
-//   //   setStartIndex(startIndex + 2)}
-//     // {startIndex > 0 && (
-//   <button 
-//     className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-gray-700 p-6 rounded-full drop-shadow-xl hover:bg-gray-50 transition"
-//     onClick={onClick}
-//   >
-//     <FaArrowLeftLong size={24} />
-//   </button>
-//     // )}
-// );
-
-// // Custom Next Button
-// const NextArrow = ({ onClick }) => (
-//   // if (startIndex > 0) setStartIndex(startIndex - 2);
-//   // {startIndex + visibleCategories < totalCategories && (
-//   <button 
-//     className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-gray-700 p-6 rounded-full drop-shadow-xl hover:bg-gray-50 transition"
-//     onClick={onClick}
-//   >
-//     <FaArrowRightLong size={24} />
-//   </button>
-//   // )}
-// );
 
 const TopColleges = () => {
 
   const sliderRef = useRef(null); // Reference to Slider
   const [isStart, setIsStart] = useState(true); // Tracks if slider is at start
   const [isEnd, setIsEnd] = useState(false); // Tracks if slider is at end
+  const [clickedButton, setClickedButton] = useState(null); //Track which course button is clicked
 
   // Function to check slider position
   const checkPosition = () => {
@@ -111,19 +83,33 @@ const TopColleges = () => {
     checkPosition();
   }, []);
 
+  const handleCourseButton = () =>{
+
+  }
+
 
   return (
 
     <div className=" flex items-center justify-center flex-col">
       <div className="w-5/6 mt-14 relative">
         <h1 className="text-4xl font-bold mb-10">Top 10 Colleges</h1>
+
+        {
+          clickedButton ??
+          <p>Yaha par tumhara code ayega</p> 
+        }
         
         <div className="w-full">
           <Slider ref={sliderRef} {...settings}>
             {courses.map((course, index) => (
               <div key={`${course}-${index}`} className="p-2">
-                <button className="w-full px-5 py-2 text-lg border-2 rounded-3xl border-gray-200 text-gray-500">
-                  {course}
+                <button onClick={() => setClickedButton(index)}
+                className={`w-full px-5 py-2 text-lg border-2 rounded-3xl border-gray-200 
+                  ${clickedButton === index ? "bg-gray-200 text-black border-2 border-slate-600" : "bg-white text-gray-500"}`}
+                >
+                  {
+                    clickedButton === index ? (<div className="flex flex-row items-center justify-between">{course} <RxCross2 size={24} className=""/></div>) : (course)
+                  }
                 </button>
               </div>
             ))}
