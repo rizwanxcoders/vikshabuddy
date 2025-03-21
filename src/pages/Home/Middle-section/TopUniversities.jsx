@@ -8,6 +8,7 @@ import {
 import Slider from "react-slick";
 
 const TopUniversities = () => {
+  
   const sliderRef = useRef(null); // Reference to Slider
   const [isStart, setIsStart] = useState(true); // Tracks if slider is at start
   const [isEnd, setIsEnd] = useState(false); // Tracks if slider is at end

@@ -1,4 +1,4 @@
-const courses = [
+const courses = [ 
   "BE/B.Tech",
   "MBA/PGDM",
   "MBBS",

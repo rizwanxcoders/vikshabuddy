@@ -3,6 +3,7 @@ import myImage from "./images/startNowimg.jpg";
 
 
 const StartNowAdd = () => {
+  
   return (
     <div className=" flex items-center justify-center"> 
       <div className='w-5/6 h-36 mt-10 rounded flex items-center justify-between ' style={{backgroundColor:"#FCE9D2"}} >

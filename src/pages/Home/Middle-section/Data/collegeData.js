@@ -1,4 +1,4 @@
-const colleges = [
+const colleges = [ 
   {
     rank: 1,
     name: "IIT Bombay - Indian Institute of Technology - [IITB]",

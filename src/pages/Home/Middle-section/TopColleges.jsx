@@ -8,7 +8,7 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 
 
-const TopColleges = () => {
+const TopColleges = () => { 
 
   const sliderRef = useRef(null); // Reference to Slider
   const [isStart, setIsStart] = useState(true); // Tracks if slider is at start

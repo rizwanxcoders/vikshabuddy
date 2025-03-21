@@ -2,6 +2,7 @@ import React from 'react'
 import rankingData from './Data/RankingData'
 
 const RankingTable = () => {
+  
   return (
     <div className=" flex items-center justify-center flex-col mb-10"> 
       <div className=' w-5/6'>

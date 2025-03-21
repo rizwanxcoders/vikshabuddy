@@ -45,7 +45,7 @@ const CollegeRanking = () => {
   };
 
   // Custom Previous Button
-  const PrevArrow = ({ onClick }) => (
+  const PrevArrow = ({ onClick }) => ( 
     !isStart && (
       <button
         className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white text-gray-700 p-6 rounded-full drop-shadow-xl shadow-gray-800 hover:bg-gray-50 transition"

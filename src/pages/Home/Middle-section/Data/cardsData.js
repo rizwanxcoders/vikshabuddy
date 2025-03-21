@@ -1,4 +1,4 @@
-const cardsData = [
+const cardsData = [ 
     {
       "college": "IIT Bombay - Indian Institute of Technology - [IITB]",
       "location": "Mumbai, Maharashtra",

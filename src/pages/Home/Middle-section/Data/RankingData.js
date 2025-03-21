@@ -1,4 +1,4 @@
-const rankingData = [
+const rankingData = [ 
   {
     logo: "https://upload.wikimedia.org/wikipedia/en/f/ff/Amity_University_logo.png",
     college: "Jawaharlal Nehru University - [JNU], New Delhi",
