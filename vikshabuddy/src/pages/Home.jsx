@@ -1,5 +1,11 @@
 // src/pages/Home.jsx
 import React from 'react';
+import Header from "../components/common/Header";
+import Navbar from "../components/common/Navbar";
+import Hero from "./header/Hero";
+import StudyGoal from "./header/StudyGoal";
+import ExploreProgram from "./header/ExploreProgram";
+
 import Footer from './home/footerFolder/Footer';
 import NewsSubscription from './home/NewsletterSubscriptionFolder/NewsSubscription';
 import TopCourses from './home/commonComponents/TopCourses';
@@ -15,8 +21,14 @@ import TopPlaces from './home/topPlaces/TopPlaces';
 const Home = () => {
   return (
     <div className="home-container">
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the main landing page for your application.</p>
+            <Header />
+      <Navbar />
+      <Hero />
+      <hr className="mt-10 border-gray-300" />
+      <StudyGoal />
+      <hr className="mt-10 border-gray-300" />
+
+      <ExploreProgram />
       <TopPlaces />
       <ExploreCourses />
       <CBSE12 />
