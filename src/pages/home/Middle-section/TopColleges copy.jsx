@@ -1,16 +1,3 @@
-// import React from 'react'
-
-// const TopColleges = () => {
-//   return (
-//     <div>
-//       <h1>Top colleges</h1>
-//     </div>
-//   )
-// }
-
-// export default TopColleges
-
-
 import React, { useEffect, useRef, useState } from "react";
 import courses from "./Data/courseData";
 import colleges from "./Data/collegeData";
@@ -20,8 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 
-
-console.log(courses)
 
 
 const TopColleges = () => {
@@ -101,7 +86,10 @@ const TopColleges = () => {
     checkPosition();
   }, []);
 
-  
+  // useEffect(() =>{
+
+  // },[])
+
 
   return (
 
@@ -109,24 +97,38 @@ const TopColleges = () => {
       <div className="w-5/6 mt-14 relative">
         <h1 className="text-4xl font-bold mb-10">Top 10 Colleges</h1>
         
-       
-          <div className="w-full">
-          {/* <Slider {...settings}>
-            {courses.map((course) => (
-              <div key={course} className="p-2">
-                <button onClick={()=> setClickedButton(course)}
+        {/* {
+          clickedButton ? 
+          <div className="w-full flex flex-row">
+            <div className="w-1/4 flex flex-row">
+            <button 
                 className="w-full px-5 py-2 text-lg border-2 rounded-3xl border-gray-200 text-gray-500"
-                >{course}
+                >
+                  {courses.find((course) => course.id === clickedButton)?.courseName || "Course"}
+                 <RxCross2 onClick={()=> setClickedButton(null)} size={24} className=""/>
+                </button>
+            </div>
+            <div class="w-0.5 h-12 mx-10 bg-gray-400"></div>
+            <div className="w-3/4"><p>All streems slider yaha ayga</p></div>
+          </div> 
+          : */}
+          <div className="w-full">
+          <Slider {...settings}>
+            {courses ?? courses.map((course) => (
+              <div key={course.id} className="p-2">
+                <button onClick={()=> setClickedButton(course.id)}
+                className="w-full px-5 py-2 text-lg border-2 rounded-3xl border-gray-200 text-gray-500"
+                >{course.courseName ? course.courseName : ""}
                   
                 </button>
               </div>
             ))}
-          </Slider> */}
+          </Slider>
         </div>
-       
+        {/* // } */}
       </div>
 
-
+{/* -----------------------------COLLEGES-------------------------------------- */}
 
       <div className="w-5/6 mt-12 border-2 border-gray-200 ">
         <table className="min-w-full ">
